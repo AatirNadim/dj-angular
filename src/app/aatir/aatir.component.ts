@@ -20,5 +20,8 @@ export class AatirComponent {
       this.no_of_components = (this.no_of_components == 10) ? 20 : 10;
       this.toggleState = !this.toggleState;
     }
+    handleChange(e : any) : void {
+      console.log(e)
+    } 
   // }
 }

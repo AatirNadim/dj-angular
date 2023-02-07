@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { OnInit} from '@angular/core';
+import { Aatir } from './aatir';
 
 @Component({
   selector: 'app-aatir',
@@ -10,6 +11,14 @@ export class AatirComponent {
   title = 'pilot-project';
   asls = ['asas', 'assa']
   no_of_components : number = 10;
+
+  room : Aatir = {
+    name : 'Aatir',
+    available : 10,
+    booked : 0,
+    total : 10
+  }
+
   toggleState : boolean = false;
   // ngOnInit(): void {
     constructor() {

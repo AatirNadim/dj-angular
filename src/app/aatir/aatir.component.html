@@ -12,4 +12,8 @@
   <button (click)= "handleClick()">Do not click</button>
   <div [hidden]="toggleState">bhasad</div>
   <div (change)="handleChange">lets see if this works</div>
+<!-- implements conditional rendering at the dom level itself, with [hidden], data available in dom but hidden in the ui, ngif practically removes the element from the dom-->
+    <div *ngIf="room.available > 2" >
+        displayed conditioned with ngif</div>
+
 </body>

@@ -1,66 +1,8 @@
-<style>
-  body {
-    background-color: aquamarine;
-  }
-  p {
-    text-align: center;
-  }
-</style>
-<body>
-  <p>aatir works!</p>
-  <h1>asa {{ asls }}</h1>
-
-  <div>
-    {{ room?.name ?? "no rooms" }}
-  </div>
-  <!-- block syntax -->
-  <h2 [innerText]="no_of_components"></h2>
-  <!-- banana syntax -->
-  <button (click)="handleClick()">Do not click</button>
-  <div [hidden]="toggleState">bhasad</div>
-  <div (change)="(handleChange)">lets see if this works</div>
-  <!-- implements conditional rendering at the dom level itself, with [hidden], data available in dom but hidden in the ui, ngif practically removes the element from the dom-->
-  <div *ngIf="room.available > 2">displayed conditioned with ngif</div>
-  <div>{{ room.name }}</div>
-
-  <div>
-    <table>
-      <tr>
-        <th>roomtype</th>
-        <th>amenities</th>
-        <th>price</th>
-        <th><img src="" alt=""></th>
-        <th>checkin</th>
-        <th>checkout</th>
-
-
-      </tr>
-      <tr>
-        <td>roomtype</td>
-        <td>amenities</td>
-        <td>price</td>
-        <td><img src="" alt=""></td>
-        <td>checkin</td>
-        <td>checkout</td>
-      </tr>
-      <tr>
-        <td>roomtype</td>
-        <td>amenities</td>
-        <td>price</td>
-        <td><img src="" alt=""></td>
-        <td>checkin</td>
-        <td>checkout</td>
-      </tr> 
-      <tr [ngClass]="e? 'even' : 'odd'"  *ngFor="let row of tempList; let e = even; let o = odd; let i = index;" >
-        <td>{{i}}</td>
-        <td>{{e ?"Even" : "Odd"}}</td>
-        <td>{{row.roomType}}</td>
-        <td>{{row.amenities}}</td>
-        <td>{{row.price}}</td>
-        <td><img src="" alt=""></td>
-        <td>{{row.checkIn}}</td>
-        <td>{{row.checkOut}}</td>
-      </tr>
-    </table>
-  </div>
-</body>
+<mat-tab-group>
+  <mat-tab label="First"> Content 1 </mat-tab>
+  <mat-tab label="Second"> Content 2 </mat-tab>
+  <mat-tab label="Third"> Content 3 </mat-tab>
+</mat-tab-group>
+<button mat-raised-button >happy now</button>
+<button mat-button color="accent">Accent</button>
+<button mat-button color="warn">Warn</button>

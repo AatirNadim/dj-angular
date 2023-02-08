@@ -15,3 +15,15 @@ export interface AatirList {
     checkIn: Date,
     checkOut: Date,
 }
+export interface Movie {
+    title: String,
+    description: String,
+    releaseDate: Date,
+    actors: Number,
+}
+
+export interface Actor {
+    name: String,
+    dob : Date,
+    movies : Number,
+}

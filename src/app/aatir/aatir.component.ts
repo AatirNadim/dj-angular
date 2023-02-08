@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { OnInit} from '@angular/core';
-import { Aatir } from './aatir';
+import { Aatir, AatirList } from './aatir';
 
 @Component({
   selector: 'app-aatir',
@@ -18,6 +18,34 @@ export class AatirComponent {
     booked : 0,
     total : 10
   }
+
+  tempList : AatirList[] = [{
+    roomType : 'AatirRoom',
+    amenities : 'Amenities',
+    price : 1000,
+    image : ['asas', 'assa'],
+    checkIn : new Date(),
+    checkOut : new Date()
+  },
+  {
+    roomType : 'SecRoom',
+    amenities : 'SecAmenities',
+    price : 3000,
+    image : ['assssss', 'assa'],
+    checkIn : new Date('11-12-2020'),
+    checkOut : new Date('11-12-2021')
+  },
+  {
+    roomType : 'ThirdRoom',
+    amenities : 'ThirdAmenities',
+    price : 5000,
+    image : ['asas', 'assa'],
+    checkIn : new Date('11-12-2020'),
+    checkOut : new Date('11-12-2021')
+  }
+
+
+]
 
   toggleState : boolean = false;
   // ngOnInit(): void {

@@ -6,3 +6,12 @@ export interface Aatir {
     name: String,
     total : Number,
 }
+
+export interface AatirList { 
+    roomType : String,
+    amenities : String,
+    price: Number,
+    image : String[],
+    checkIn: Date,
+    checkOut: Date,
+}
